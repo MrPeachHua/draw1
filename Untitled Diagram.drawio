@@ -1,1 +1,53 @@
-<mxfile host="app.diagrams.net" modified="2022-05-12T07:46:41.040Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" version="17.4.6" etag="VsE9RpHXuhx99N_2TvI_" type="github"><diagram id="mVguKk-3OhKjxPUnQ4Dj">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-12T08:03:04.931Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="uQjng5I07Q1JiTbolGmk" version="17.4.6" type="github">
+  <diagram id="mVguKk-3OhKjxPUnQ4Dj" name="Page-1">
+    <mxGraphModel dx="1353" dy="356" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-c8BaRbQRZhnvYyYa9HX-1" target="-c8BaRbQRZhnvYyYa9HX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-1" value="答题模板&lt;br&gt;提交测评结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-c8BaRbQRZhnvYyYa9HX-2" target="-c8BaRbQRZhnvYyYa9HX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-10" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-c8BaRbQRZhnvYyYa9HX-5">
+          <mxGeometry x="-0.2889" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-c8BaRbQRZhnvYyYa9HX-2" target="-c8BaRbQRZhnvYyYa9HX-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-9" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-c8BaRbQRZhnvYyYa9HX-8">
+          <mxGeometry x="-0.5371" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-2" value="evaluationId是否存在" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="135" y="190" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-c8BaRbQRZhnvYyYa9HX-4" target="-c8BaRbQRZhnvYyYa9HX-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-4" value="开始测评/埋点/保存数据&lt;br&gt;&lt;pre style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;jetbrains mono&amp;#34; ; font-size: 9.8pt&quot;&gt;&lt;span style=&quot;color: #808080 ; font-style: italic&quot;&gt;activity_evaluation_result&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-7" value="获取传过来的上次的答题结果id" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="271" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-c8BaRbQRZhnvYyYa9HX-11" target="-c8BaRbQRZhnvYyYa9HX-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-11" value="获取题目选项信息" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-c8BaRbQRZhnvYyYa9HX-13" value="测评结果展示&lt;br&gt;1、测评结果随机展示" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
