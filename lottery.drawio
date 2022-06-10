@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-10T06:15:03.728Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="QddIjqh__wuezy1acnS4" version="18.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-10T06:49:16.495Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="iVqyelfiokNUvaUt3Jii" version="18.2.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="881" dy="419" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="749" dy="356" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,27 +19,31 @@
           <mxGeometry x="230" y="80" width="100" height="680" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
-          <mxGeometry x="45" y="80" width="10" height="280" as="geometry" />
+          <mxGeometry x="45" y="80" width="10" height="560" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
-          <mxGeometry x="50" y="130" width="10" height="40" as="geometry" />
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry x="50" y="290" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-18" value="扣减库存redis锁&lt;br&gt;key：decrPrizeLock_+activityCode+skuId&lt;br&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-17" parent="3nuBFxr9cyL0pnOWT2aG-5">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-24" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;checkPrizeAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;库存redis锁&lt;br&gt;key：decrPrizeLock_+activityCode+skuId&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;redis扣减奖品库存&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;当天库存key：yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;总库存key：All+yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;redis抽奖次数递增&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;key：realLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-23" parent="3nuBFxr9cyL0pnOWT2aG-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="110" as="sourcePoint" />
+            <mxPoint x="55" y="230" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="85" y="110" />
+              <mxPoint x="55" y="260" />
+              <mxPoint x="79" y="260" />
+              <mxPoint x="79" y="290" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
-          <mxGeometry x="50" y="230" width="10" height="40" as="geometry" />
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+          <mxGeometry x="50" y="160" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-24" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;扣减redis库存&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;当天库存key：yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;总库存key：All+yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;抽奖次数递增redis&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;key：realLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-23" parent="3nuBFxr9cyL0pnOWT2aG-5">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-26" value="realTimeCheckPrizeStock.execute(ruleAndActionBo)&lt;br&gt;奖品库存redis设置&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prize_total_stock_+activityCode+skuId&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.06;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-25" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="210" as="sourcePoint" />
+            <mxPoint x="60" y="135" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="79" y="210" />
+              <mxPoint x="56" y="135" />
+              <mxPoint x="80" y="135" />
+              <mxPoint x="80" y="160" />
             </Array>
           </mxGeometry>
         </mxCell>
