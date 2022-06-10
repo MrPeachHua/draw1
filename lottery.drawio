@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-10T07:37:15.935Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="s1bp6T-fR5bukE0rGevu" version="18.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-10T08:18:33.730Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="1_3Vmd5j3v6n-L8S2N53" version="18.2.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="777" dy="367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1088" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -80,7 +80,7 @@
         <mxCell id="evmN7Rl7GSXi7IjpEYUV-44" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="evmN7Rl7GSXi7IjpEYUV-1">
           <mxGeometry x="50" y="760" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-45" value="self call" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-44" parent="evmN7Rl7GSXi7IjpEYUV-1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-45" value="积分对接发奖&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线上coupon发奖&lt;br&gt;奖品记录状态变为已发货&lt;br&gt;更新coupon数据&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线下发奖&lt;br&gt;&amp;nbsp;奖品记录状态变为待发货&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线上常规发奖&lt;br&gt;奖品记录状态变为已发货&lt;br&gt;数据库奖品库存-1（PrizeList）" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-44" parent="evmN7Rl7GSXi7IjpEYUV-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="740" as="sourcePoint" />
             <Array as="points">
