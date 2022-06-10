@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-10T08:20:10.083Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="sK1XWQ_2LXJSmjE276-K" version="18.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-10T08:20:59.268Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="iwZpNJMDfr0eFs7mdWNW" version="18.2.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1360" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="640" dy="302" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -24,7 +24,7 @@
         <mxCell id="evmN7Rl7GSXi7IjpEYUV-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
           <mxGeometry x="50" y="290" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-24" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;checkPrizeAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;库存redis锁&lt;br&gt;key：decrPrizeLock_+activityCode+skuId&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;redis扣减奖品库存&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;当天库存key：yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;总库存key：All+yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-23" parent="3nuBFxr9cyL0pnOWT2aG-5">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-24" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;checkPrizeAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1、库存redis锁&lt;br&gt;key：decrPrizeLock_+activityCode+skuId&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2、redis扣减奖品库存&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;当天库存key：yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;总库存key：All+yyyyMMdd+activityCode+prizeCode+skuId&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-23" parent="3nuBFxr9cyL0pnOWT2aG-5">
           <mxGeometry x="0.0485" y="33" relative="1" as="geometry">
             <mxPoint x="55" y="230" as="sourcePoint" />
             <Array as="points">
@@ -38,7 +38,7 @@
         <mxCell id="evmN7Rl7GSXi7IjpEYUV-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
           <mxGeometry x="50" y="160" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-26" value="realTimeCheckPrizeStock.execute(ruleAndActionBo)&lt;br&gt;奖品库存redis设置&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prize_total_stock_+activityCode+skuId&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.06;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-25" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-26" value="realTimeCheckPrizeStock.execute(ruleAndActionBo)&lt;br&gt;1、奖品库存redis设置&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prize_total_stock_+activityCode+skuId&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.06;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-25" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6">
           <mxGeometry x="0.0328" y="34" relative="1" as="geometry">
             <mxPoint x="60" y="135" as="sourcePoint" />
             <Array as="points">
@@ -52,7 +52,7 @@
         <mxCell id="evmN7Rl7GSXi7IjpEYUV-27" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
           <mxGeometry x="50" y="390" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-28" value="saveLotteryRecordAction.execute(ruleAndActionBo)&lt;br&gt;保存数据库记录（发放中状态）&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;saveLotteryRecordAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;br&gt;异步扣除数据库库存&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prizeConfigService.prizeBuckleInventory()&lt;br&gt;&lt;/span&gt;redis抽奖次数递增&lt;br&gt;key：realLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.028;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-27" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-28" value="saveLotteryRecordAction.execute(ruleAndActionBo)&lt;br&gt;1、保存数据库记录（发放中状态）&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;saveLotteryRecordAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;br&gt;2、异步扣除数据库库存&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prizeConfigService.prizeBuckleInventory()&lt;br&gt;&lt;/span&gt;3、redis抽奖次数递增&lt;br&gt;key：realLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.028;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-27" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6">
           <mxGeometry x="0.7172" y="42" relative="1" as="geometry">
             <mxPoint x="60" y="370" as="sourcePoint" />
             <Array as="points">
