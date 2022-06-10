@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-10T09:42:13.073Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="aWOXnnHUD8-kfMQ1E1e7" version="18.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-10T10:50:59.104Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="R5YHwHkbFT4sZgoOU4_T" version="19.0.3" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="907" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="863" dy="395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -21,10 +21,10 @@
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-6" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="50" y="290" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-24" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;checkPrizeAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;1、库存redis锁&lt;br&gt;key：decrPrizeLock_+activityCode+skuId&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2、refillSupplies2初始化库存缓存&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;refillSupplies2&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;synchronizePrizeCache&lt;/span&gt;&lt;/div&gt;日实际使用库存锁：&lt;span style=&quot;font-size: 11px;&quot;&gt;dayredisLockKey_+acvivityCode+skuId+prizeCode&lt;/span&gt;&lt;br&gt;日实际使用库存：dayrealLotteryStockActivity_activityCode+skuId+prizeCode&lt;br&gt;&lt;div&gt;（当天已有lettoryrecod记录）&lt;/div&gt;&lt;div&gt;当天剩余库存 =&amp;nbsp;dailyLimit - 日实际使用库存&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;实际使用库存锁：redisLockKey_activityCode+skuId+prizeCode&lt;br&gt;&lt;/div&gt;&lt;div&gt;总剩余库存 =&amp;nbsp;&amp;nbsp;inventory - 实际使用库存&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;3、redis扣减奖品库存&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;当天剩余库存key：yyyyMMdd+activityCode+prizeCode+skuId&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;总剩余库存key：All+yyyyMMdd+activityCode+prizeCode+skuId&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-23" parent="3nuBFxr9cyL0pnOWT2aG-5">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-24" value="&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;checkPrizeAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;1、剩余库存redis锁&lt;br&gt;key：decrPrizeLock_+activityCode+skuId&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;2、refillSupplies2初始化库存缓存&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;refillSupplies2&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;synchronizePrizeCache&lt;/span&gt;&lt;/div&gt;日实际使用库存锁：&lt;span style=&quot;font-size: 11px;&quot;&gt;dayredisLockKey_+acvivityCode+skuId+prizeCode&lt;/span&gt;&lt;br&gt;日实际使用库存：dayrealLotteryStockActivity_activityCode+skuId+prizeCode&lt;br&gt;&lt;div&gt;（当天已有lettoryrecod记录）&lt;/div&gt;&lt;div&gt;当天剩余库存 =&amp;nbsp;dailyLimit - 日实际使用库存&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;实际使用库存锁：redisLockKey_activityCode+skuId+prizeCode&lt;br&gt;&lt;/div&gt;&lt;div&gt;总剩余库存 =&amp;nbsp;&amp;nbsp;inventory - 实际使用库存&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;3、redis扣减奖品库存&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;当天剩余库存key：yyyyMMdd+activityCode+prizeCode+skuId&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;总剩余库存key：All+yyyyMMdd+activityCode+prizeCode+skuId&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="3nuBFxr9cyL0pnOWT2aG-5" target="evmN7Rl7GSXi7IjpEYUV-23" edge="1">
           <mxGeometry x="0.0479" y="31" relative="1" as="geometry">
             <mxPoint x="55" y="230" as="sourcePoint" />
             <Array as="points">
@@ -35,10 +35,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="50" y="160" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-26" value="realTimeCheckPrizeStock.execute(ruleAndActionBo)&lt;br&gt;1、奖品库存redis设置&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prize_total_stock_+activityCode+skuId&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.06;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-25" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-26" value="realTimeCheckPrizeStock.execute(ruleAndActionBo)&lt;br&gt;1、奖品库存redis设置&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prize_total_stock_+activityCode+skuId&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.06;exitY=0.096;exitDx=0;exitDy=0;exitPerimeter=0;" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6" target="evmN7Rl7GSXi7IjpEYUV-25" edge="1">
           <mxGeometry x="-0.0575" y="63" relative="1" as="geometry">
             <mxPoint x="60" y="135" as="sourcePoint" />
             <Array as="points">
@@ -49,10 +49,10 @@
             <mxPoint x="-33" y="-55" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-27" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-5">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-27" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="3nuBFxr9cyL0pnOWT2aG-5" vertex="1">
           <mxGeometry x="50" y="390" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-28" value="saveLotteryRecordAction.execute(ruleAndActionBo)&lt;br&gt;1、保存数据库记录（发放中状态）&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;saveLotteryRecordAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;br&gt;2、异步扣除数据库库存&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prizeConfigService.prizeBuckleInventory()&lt;br&gt;&lt;/span&gt;(prize_config.excess_inventory)&lt;br&gt;3、redis抽奖次数递增&lt;br&gt;key：realLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.028;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-27" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-28" value="saveLotteryRecordAction.execute(ruleAndActionBo)&lt;br&gt;1、保存数据库记录（发放中状态）&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;saveLotteryRecordAction.execute(ruleAndActionBo)&lt;/span&gt;&lt;br&gt;2、异步扣除数据库库存&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;prizeConfigService.prizeBuckleInventory()&lt;br&gt;&lt;/span&gt;(prize_config.excess_inventory)&lt;br&gt;3、redis抽奖次数递增&lt;br&gt;key：realLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;exitX=1.028;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;" parent="3nuBFxr9cyL0pnOWT2aG-5" source="3nuBFxr9cyL0pnOWT2aG-6" target="evmN7Rl7GSXi7IjpEYUV-27" edge="1">
           <mxGeometry x="0.7173" y="67" relative="1" as="geometry">
             <mxPoint x="60" y="370" as="sourcePoint" />
             <Array as="points">
@@ -68,19 +68,19 @@
             <mxPoint x="275" y="160" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-1" value="prize服务" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-1" value="prize服务" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
           <mxGeometry x="950" y="80" width="100" height="890" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="evmN7Rl7GSXi7IjpEYUV-1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-2" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="evmN7Rl7GSXi7IjpEYUV-1" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="810" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="evmN7Rl7GSXi7IjpEYUV-1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="evmN7Rl7GSXi7IjpEYUV-1" vertex="1">
           <mxGeometry x="35" y="590" width="10" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-44" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="evmN7Rl7GSXi7IjpEYUV-1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-44" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="evmN7Rl7GSXi7IjpEYUV-1" vertex="1">
           <mxGeometry x="50" y="760" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-45" value="积分对接发奖&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线上coupon发奖&lt;br&gt;奖品记录状态变为已发货&lt;br&gt;更新coupon数据&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线下发奖&lt;br&gt;&amp;nbsp;奖品记录状态变为待发货&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线上常规发奖&lt;br&gt;奖品记录状态变为已发货&lt;br&gt;数据库奖品库存-1（PrizeList）" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-44" parent="evmN7Rl7GSXi7IjpEYUV-1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-45" value="积分对接发奖&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线上coupon发奖&lt;br&gt;奖品记录状态变为已发货&lt;br&gt;更新coupon数据&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线下发奖&lt;br&gt;&amp;nbsp;奖品记录状态变为待发货&lt;br&gt;数据库奖品库存-1（PrizeList）&lt;br&gt;&lt;br&gt;线上常规发奖&lt;br&gt;奖品记录状态变为已发货&lt;br&gt;数据库奖品库存-1（PrizeList）" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="evmN7Rl7GSXi7IjpEYUV-1" target="evmN7Rl7GSXi7IjpEYUV-44" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="740" as="sourcePoint" />
             <Array as="points">
@@ -88,17 +88,17 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-41" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;baseService.sendSaveLotteryRecordMsg(）&lt;/span&gt;&lt;br&gt;发送kafka消息发奖（简图）" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" edge="1" target="evmN7Rl7GSXi7IjpEYUV-40" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-41" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;baseService.sendSaveLotteryRecordMsg(）&lt;/span&gt;&lt;br&gt;发送kafka消息发奖（简图）" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-2" target="evmN7Rl7GSXi7IjpEYUV-40" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="120" y="670" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-42" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" edge="1" source="evmN7Rl7GSXi7IjpEYUV-40" parent="1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-42" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" parent="1" source="evmN7Rl7GSXi7IjpEYUV-40" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="120" y="750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="evmN7Rl7GSXi7IjpEYUV-43" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-1">
+        <mxCell id="evmN7Rl7GSXi7IjpEYUV-43" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-6" target="3nuBFxr9cyL0pnOWT2aG-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="510" y="610" as="sourcePoint" />
             <mxPoint x="120" y="570" as="targetPoint" />
