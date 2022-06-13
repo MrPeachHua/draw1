@@ -1,93 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2022-06-13T10:44:17.259Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="q372jxDiYx0xomUqxnC6" version="20.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-13T10:50:26.033Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="o4cTlLXxfjNmRNq5v7iN" version="20.0.1" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="935" dy="353" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1603" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="H8gWmgWeNY98q9dUtouS-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H8gWmgWeNY98q9dUtouS-16" target="H8gWmgWeNY98q9dUtouS-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-16" value="加锁&lt;span style=&quot;&quot;&gt;stockLock&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFB366;" vertex="1" parent="1">
-          <mxGeometry x="360" y="360" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H8gWmgWeNY98q9dUtouS-18" target="H8gWmgWeNY98q9dUtouS-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-18" value="redis设置总&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;（&lt;b style=&quot;text-align: left;&quot;&gt;allCount&lt;/b&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;）&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
-          <mxGeometry x="360" y="500" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H8gWmgWeNY98q9dUtouS-20">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="420" y="780" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-20" value="redis设置日&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;（day&lt;b style=&quot;text-align: left;&quot;&gt;Count&lt;/b&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;）&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
-          <mxGeometry x="360" y="640" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="H8gWmgWeNY98q9dUtouS-7" target="H8gWmgWeNY98q9dUtouS-16">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="360" y="270" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="77e6c97f196da883-1" value="mgm（mgmLottery）&lt;span style=&quot;background-color: initial;&quot;&gt;抽奖库存扣减逻辑&lt;/span&gt;" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="1" vertex="1">
-          <mxGeometry x="70" y="50" width="890" height="1310" as="geometry" />
+          <mxGeometry x="70" y="50" width="760" height="1200" as="geometry" />
         </mxCell>
         <mxCell id="77e6c97f196da883-2" value="fun服务" style="swimlane;html=1;startSize=20;fillColor=#E6E6E6;" parent="77e6c97f196da883-1" vertex="1">
-          <mxGeometry y="20" width="160" height="1290" as="geometry" />
+          <mxGeometry y="20" width="160" height="1180" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-2" source="H8gWmgWeNY98q9dUtouS-4" target="H8gWmgWeNY98q9dUtouS-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-4" value="开始" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="77e6c97f196da883-2">
-          <mxGeometry x="20" y="50" width="120" height="80" as="geometry" />
+          <mxGeometry x="20" y="60" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-7" value="抽奖接口" style="whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="77e6c97f196da883-2">
-          <mxGeometry x="20" y="170" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77e6c97f196da883-3" value="rule服务" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
-          <mxGeometry x="160" y="20" width="370" height="1290" as="geometry" />
+          <mxGeometry x="160" y="20" width="370" height="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-16" value="加锁&lt;span style=&quot;&quot;&gt;stockLock&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFB366;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="125" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-18" value="redis设置总&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;（&lt;b style=&quot;text-align: left;&quot;&gt;allCount&lt;/b&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;）&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="125" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-16" target="H8gWmgWeNY98q9dUtouS-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-20" value="redis设置日&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;（day&lt;b style=&quot;text-align: left;&quot;&gt;Count&lt;/b&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;）&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="125" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-18" target="H8gWmgWeNY98q9dUtouS-20">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-48" target="H8gWmgWeNY98q9dUtouS-49">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-48" value="redis增加总&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;（&lt;b style=&quot;text-align: left;&quot;&gt;allCount&lt;/b&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;）加1&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="130" y="710" width="120" height="60" as="geometry" />
+          <mxGeometry x="125" y="620" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-49" target="H8gWmgWeNY98q9dUtouS-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-49" value="redis增加日&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;（day&lt;b style=&quot;text-align: left;&quot;&gt;Count&lt;/b&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;）加1&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="130" y="840" width="120" height="60" as="geometry" />
+          <mxGeometry x="125" y="750" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-51" target="H8gWmgWeNY98q9dUtouS-53">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-51" value="保存抽奖记录到数据库acvitivy_lotettry_record" style="whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="130" y="970" width="120" height="60" as="geometry" />
+          <mxGeometry x="125" y="880" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-53" value="异步扣减数据库库存&lt;br&gt;prize_config&lt;br&gt;.excess_inventory-1" style="whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="130" y="1110" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-55" value="数据库库存扣减&lt;br&gt;prize_list.inventory 减1" style="whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="450" y="1110" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-56" value="结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="450" y="1220" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-55" target="H8gWmgWeNY98q9dUtouS-56">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H8gWmgWeNY98q9dUtouS-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-3" source="H8gWmgWeNY98q9dUtouS-53" target="H8gWmgWeNY98q9dUtouS-55">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="125" y="1020" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77e6c97f196da883-4" value="prize服务" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
-          <mxGeometry x="530" y="20" width="360" height="1290" as="geometry" />
+          <mxGeometry x="530" y="20" width="230" height="1180" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-14" value="&lt;b&gt;dayCount（日库存）&lt;br&gt;		rediskey：&lt;span style=&quot;font-size: 11px;&quot;&gt;dayPrizeCount_day%s_parentId%s_prizeConfigId%s&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;数据库字段：prize_config.inventory&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;allCount（总库存）&lt;br&gt;rediskey：&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;allPrizeCount_parentId%s_prizeConfigId%s&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;数据库字段：prize_config.inventory&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="77e6c97f196da883-4">
-          <mxGeometry x="-100" y="155" width="380" height="120" as="geometry" />
+          <mxGeometry x="-100" y="151" width="380" height="120" as="geometry" />
         </mxCell>
         <mxCell id="H8gWmgWeNY98q9dUtouS-15" value="&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;b&gt;库存锁&lt;br&gt;库存锁 stockLock&amp;nbsp; syncPrizeCountCacheLock_parentId%s_prizeConfigId%s&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="77e6c97f196da883-4">
-          <mxGeometry x="-99" y="100" width="450" height="30" as="geometry" />
+          <mxGeometry x="-102" y="101" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-55" value="数据库库存扣减&lt;br&gt;prize_list.inventory 减1" style="whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="80" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-56" value="结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="80" y="1110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-4" source="H8gWmgWeNY98q9dUtouS-55" target="H8gWmgWeNY98q9dUtouS-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-1" source="H8gWmgWeNY98q9dUtouS-7" target="H8gWmgWeNY98q9dUtouS-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H8gWmgWeNY98q9dUtouS-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-1" source="H8gWmgWeNY98q9dUtouS-53" target="H8gWmgWeNY98q9dUtouS-55">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
