@@ -1,1 +1,121 @@
-<mxfile host="app.diagrams.net" modified="2022-06-13T10:09:11.276Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" version="20.0.1" etag="sxmck1iDKzPwZwbrDTDL" type="github"><diagram id="2-Qr-5mMiATyAA-mkCaC">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-13T10:09:35.963Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="nQidzP9O7M9CI8shA6Oy" version="20.0.1" type="github">
+  <diagram id="2-Qr-5mMiATyAA-mkCaC" name="Page-1">
+    <mxGraphModel dx="2244" dy="848" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-1" value="luckybag抽奖库存扣减逻辑" style="swimlane;html=1;childLayout=stackLayout;startSize=20;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="50" width="850" height="1880" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-2" value="fun服务" style="swimlane;html=1;startSize=20;fillColor=#E6E6E6;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-1">
+          <mxGeometry y="20" width="160" height="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="5-tF3Kq6yr06-WPkdYEN-2" source="5-tF3Kq6yr06-WPkdYEN-4" target="5-tF3Kq6yr06-WPkdYEN-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-4" value="开始" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-2">
+          <mxGeometry x="20" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-5" value="抽奖接口" style="whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-2">
+          <mxGeometry x="20" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-6" value="rule服务" style="swimlane;html=1;startSize=20;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-1">
+          <mxGeometry x="160" y="20" width="350" height="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-7" value="redis设置totalStock" style="whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-6">
+          <mxGeometry x="130" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-8" value="异步扣减数据库库存&lt;br&gt;prize_config&lt;br&gt;.excess_inventory-1" style="whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-6">
+          <mxGeometry x="130" y="1660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5-tF3Kq6yr06-WPkdYEN-6" source="5-tF3Kq6yr06-WPkdYEN-10" target="5-tF3Kq6yr06-WPkdYEN-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-10" value="&lt;span style=&quot;&quot;&gt;redis设置总&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;&lt;span style=&quot;&quot;&gt;（&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;realLottery）加1&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-6">
+          <mxGeometry x="130" y="1533" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-11" value="prize服务" style="swimlane;html=1;startSize=20;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-1">
+          <mxGeometry x="510" y="20" width="340" height="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5-tF3Kq6yr06-WPkdYEN-11" source="5-tF3Kq6yr06-WPkdYEN-13" target="5-tF3Kq6yr06-WPkdYEN-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-13" value="数据库库存扣减&lt;br&gt;prize_list.inventory 减1" style="whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-11">
+          <mxGeometry x="100" y="1660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-14" value="结束" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E6E6E6;" vertex="1" parent="5-tF3Kq6yr06-WPkdYEN-11">
+          <mxGeometry x="100" y="1770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5-tF3Kq6yr06-WPkdYEN-1" source="5-tF3Kq6yr06-WPkdYEN-8" target="5-tF3Kq6yr06-WPkdYEN-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="5-tF3Kq6yr06-WPkdYEN-1" source="5-tF3Kq6yr06-WPkdYEN-5" target="5-tF3Kq6yr06-WPkdYEN-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-17" value="&lt;b&gt;totalStock（总库存）&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;rediskey：&lt;span style=&quot;font-size: 11px;&quot;&gt;prize_total_stock_+activityCode+skuId&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;数据库字段：prize_config.inventory&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;dayRealLottery（日使用库存）&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;redisKey：dayrealLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;br&gt;数据库字段：activity_lottery_record 的记录数&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;realLottery（使用库存）&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;redisKey：realLotteryStockActivity_+acvivityCode+skuId+prizeCode&lt;br&gt;数据库字段：activity_lottery_record 的记录数&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;dayRemaind（日剩余可用库存）：&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;rediskey：&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: center;&quot;&gt;yyyyMMdd+activityCode+prizeCode+skuId&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;当天剩余库存 = prize_config.daily_limit - 日实际使用库存&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;All&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Remaind&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;（总剩余可用库存）：&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;rediskey：All&lt;/span&gt;&lt;span style=&quot;font-size: 11px; text-align: center;&quot;&gt;yyyyMMdd+activityCode+prizeCode+skuId&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: center;&quot;&gt;当天剩余库存 = prize_config.inventory - 总实际使用库存&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="300" width="430" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-18" value="&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;b&gt;库存锁&lt;br&gt;stockLock（总库存使用锁）redisLockKey_activityCode+skuId+prizeCode&lt;br&gt;decrPrizeLock （库存扣减redis锁）decrPrizeLock_+activityCode+skuId&lt;br&gt;dayStockLock （日库存使用锁）&lt;span style=&quot;font-size: 11px; text-align: center;&quot;&gt;dayredisLockKey_+acvivityCode+skuId+prizeCode&lt;/span&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="190" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-20" target="5-tF3Kq6yr06-WPkdYEN-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-20" value="加锁&lt;span style=&quot;&quot;&gt;stockLock&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-7" target="5-tF3Kq6yr06-WPkdYEN-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-23" target="5-tF3Kq6yr06-WPkdYEN-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-23" value="redis设置总&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;使用库存&lt;/span&gt;（&lt;span style=&quot;font-size: 11px; text-align: left;&quot;&gt;realLottery）&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-25" target="5-tF3Kq6yr06-WPkdYEN-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-25" value="开启库存扣减锁（&lt;span style=&quot;text-align: left;&quot;&gt;decrPrizeLock&amp;nbsp;&lt;/span&gt;&lt;br&gt;）" style="whiteSpace=wrap;html=1;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-27" target="5-tF3Kq6yr06-WPkdYEN-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-27" value="开启日使用存锁（&lt;span style=&quot;text-align: left;&quot;&gt;dayStockLock&amp;nbsp;&lt;/span&gt;&lt;br&gt;）" style="whiteSpace=wrap;html=1;fillColor=#FFB366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-29" target="5-tF3Kq6yr06-WPkdYEN-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-29" value="设置日剩余库存（&lt;span style=&quot;&quot;&gt;dayRemaind&lt;/span&gt;）" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="924" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-31" target="5-tF3Kq6yr06-WPkdYEN-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-31" value="&lt;span style=&quot;&quot;&gt;设置总用库存（&lt;/span&gt;&lt;span style=&quot;&quot;&gt;dayRemaind&lt;/span&gt;&lt;span style=&quot;&quot;&gt;）&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1064" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-33" target="5-tF3Kq6yr06-WPkdYEN-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-33" value="扣减日剩余库存（dayRemaind&lt;br&gt;）" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1204" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-35" target="5-tF3Kq6yr06-WPkdYEN-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-35" value="扣减总剩余库存（dayRemaind）&lt;br&gt;）" style="whiteSpace=wrap;html=1;fillColor=#9AC7BF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1344" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5-tF3Kq6yr06-WPkdYEN-37" target="5-tF3Kq6yr06-WPkdYEN-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5-tF3Kq6yr06-WPkdYEN-37" value="保存抽奖记录到数据库acvitivy_lotettry_record" style="whiteSpace=wrap;html=1;fillColor=#A9C4EB;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1484" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
